@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            height: 50vh;
+            width: 30%;
+            border: 2px outset;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            padding: 1rem;
+            background-color: aquamarine;
+        } 
+        #btn{
+            width: 5rem;
+            height: 1.5rem;
+            color: white;
+            background-color: indianred;
+        }
+        input{
+            height: 20px;
+            width: 50%;
+
+        }
+        span{
+            color: blueviolet;
+            font-size: 7.5rem;
+        }
+ </style>
+</head>
+<body>
+   <form name="myform"
+   onsubmit="return checkform()" action="success.html">
+    <input type="text" name="username">
+    <span id="userError"></span>
+    <input type="email" name="email">
+    <span id="emailError"></span>
+    <input type="password" name="pass">
+    <span id="passError"></span>
+    <input type="password" name="confirm">
+    <span id="repassError"></span>
+    <input type="submit"id="btn">
+    <input type="reset"id="btn">
+</form>
+<script src="js.js"></script>
+</body>
+</html>
+
+
